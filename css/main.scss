@@ -270,9 +270,22 @@ a {
 	      transform: rotateY(20deg) translateZ(0px);
 	    }
 	  }
+	}	
+}
+
+.not-found {
+	text-align: center;
+	
+	h1 {
+		font-weight: lighter;
+		font-size: 6em;
 	}
 	
+	p {
+		font-size: 1em;
+	}
 }
+
 @media screen and (max-width: 63.875em) {
   .wrapper { 
     font-size: 60%; 
