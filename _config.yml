@@ -1,0 +1,12 @@
+# Site settings
+title: Linkbelt
+email: help@linkbelt.me
+description: Linkbelt, an iOS application that servers as a utility belt for your links.
+baseurl: ""
+url: "http://linkbelt.me" # the base hostname & protocol for your site
+twitter_username: linkbeltme
+github_username:  adityatrivedi
+
+# Build settings
+exclude: [README.md, LICENSE.md, CNAME, Gemfile, Gemfile.lock, vendor]
+markdown: kramdown
