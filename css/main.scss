@@ -1,6 +1,5 @@
 ---
 ---
-
 *,
 *:after,
 *:before {
@@ -8,13 +7,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-body, html {
-  font-size: 100%; 	
-  padding: 0; 
+body,
+html {
+  font-size: 100%;
+  padding: 0;
   margin: 0;
 }
-
 body {
   font-family: 'Lato', sans-serif;
   color: #333;
@@ -22,51 +20,41 @@ body {
   font-size: 0.9em;
   overflow-x: hidden;
 }
-
 a {
   color: #999;
   text-decoration: underline;
-  
   &:hover {
     color: #000;
   }
 }
-
-
 .container {
-  padding: 4em 1.875em;
+  padding: 4rem 0;
   background: #f9f9f9;
   position: relative;
 }
-
 .main {
-	.footer {
-	  font-weight: 300;
-	  font-size: 1.1em;
-	  color: #999;
-	  text-align: center;
-	  margin-top: 2em;
-	}
+  .footer {
+    font-weight: 300;
+    font-size: 1.1em;
+    color: #999;
+    text-align: center;
+    margin-top: 2em;
+  }
 }
-
 .social {
   display: inline-block;
   text-align: center;
-  
   .twitter {
-	  margin-right: 1.5em;
+    margin-right: 1.5em;
   }
-  
   .mail {
     margin-right: 1.5em;
     margin-left: 1.5em;
   }
-  
   .github {
     margin-left: 1.5em;
   }
 }
-
 .disclaimer {
   text-align: center;
   padding: 0 2em 0 2em;
@@ -74,7 +62,6 @@ a {
   font-style: italic;
   color: #333;
 }
-
 .wrapper {
   width: 100%;
   position: relative;
@@ -84,7 +71,6 @@ a {
   -webkit-perspective-origin: 50% 25%;
   -moz-perspective-origin: 50% 25%;
   perspective-origin: 50% 25%;
-  
   h2 {
     top: 20%;
     width: 50%;
@@ -93,7 +79,6 @@ a {
     font-size: 4em;
     text-align: right;
     padding: 0 180px 0 50px;
-    
     span {
       display: block;
       font-size: 60%;
@@ -101,14 +86,12 @@ a {
     }
   }
 }
-
 .app-store-badge {
   margin-top: 1em;
 }
-
 .iphone {
   background: url(../img/iphone.png) no-repeat;
-  width: 318px;
+  width: 349px;
   height: 611px;
   margin: 0 auto;
   padding: 23px 0 0 29px;
@@ -119,18 +102,15 @@ a {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  
   a {
-    height: 440px;
-    width: 249px;
+    height: 382px;
+    width: 215px;
     display: inline-block;
-    margin: 85px 0 0 20px;
-    
+    margin: 91px 0 0 38px;
     img {
       display: block;
     }
   }
-  
   h3 {
     display: none;
     position: absolute;
@@ -143,7 +123,6 @@ a {
     color: #888;
   }
 }
-
 .ac-grid {
   position: absolute;
   width: 100%;
@@ -156,7 +135,6 @@ a {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  
   a {
     width: 220px;
     display: inline-block;
@@ -174,31 +152,26 @@ a {
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     transition-delay: 0s;
-    
     &:first-child {
       -webkit-transform-origin: right center;
       -moz-transform-origin: right center;
       transform-origin: right center;
     }
-    
     &:last-child {
       -webkit-transform-origin: left center;
       -moz-transform-origin: left center;
       transform-origin: left center;
     }
-    
     &:hover span {
       opacity: 1;
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
       transform: translateY(0);
     }
-    
     img {
       display: block;
       width: 100%;
     }
-    
     span {
       position: absolute;
       height: 100%;
@@ -209,7 +182,7 @@ a {
       padding: 4em 1em 0;
       z-index: 100;
       color: #ddd;
-      background: rgba(0,0,0,0.4);
+      background: rgba(0, 0, 0, 0.4);
       font-weight: 700;
       opacity: 0;
       -webkit-transform: translateY(-5px);
@@ -221,115 +194,97 @@ a {
     }
   }
 }
-
 .wrapper.ac-gridview {
-	.iphone {
-	  -webkit-transform: translateZ(-350px);
-	  -moz-transform: translateZ(-350px);
-	  transform: translateZ(-350px);
-	  opacity: .6;
-	}
-	
-	.ac-grid {
-	  pointer-events: auto;
-	  
-	  a {
-	    opacity: 1;
-	    pointer-events: auto;
-	    
-	    &:first-child {
-	      -webkit-transform: rotateY(-20deg) translateZ(0px);
-	      -moz-transform: rotateY(-20deg) translateZ(0px);
-	      transform: rotateY(-20deg) translateZ(0px);
-	    }
-	    
-	    &:nth-child(2) {
-	      -webkit-transition-delay: 50ms;
-	      -moz-transition-delay: 50ms;
-	      transition-delay: 50ms;
-	      -webkit-transform: translateZ(0px);
-	      -moz-transform: translateZ(0px);
-	      transform: translateZ(0px);
-	    }
-	    
-	    &:nth-child(3) {
-	      -webkit-transition-delay: 100ms;
-	      -moz-transition-delay: 100ms;
-	      transition-delay: 100ms;
-	      -webkit-transform: translateZ(0px);
-	      -moz-transform: translateZ(0px);
-	      transform: translateZ(0px);
-	    }
-	    
-	    &:last-child {
-	      -webkit-transition-delay: 150ms;
-	      -moz-transition-delay: 150ms;
-	      transition-delay: 150ms;
-	      -webkit-transform: rotateY(20deg) translateZ(0px);
-	      -moz-transform: rotateY(20deg) translateZ(0px);
-	      transform: rotateY(20deg) translateZ(0px);
-	    }
-	  }
-	}	
+  .iphone {
+    -webkit-transform: translateZ(-350px);
+    -moz-transform: translateZ(-350px);
+    transform: translateZ(-350px);
+    opacity: .6;
+  }
+  .ac-grid {
+    pointer-events: auto;
+    a {
+      opacity: 1;
+      pointer-events: auto;
+      &:first-child {
+        -webkit-transform: rotateY(-20deg) translateZ(0px);
+        -moz-transform: rotateY(-20deg) translateZ(0px);
+        transform: rotateY(-20deg) translateZ(0px);
+      }
+      &:nth-child(2) {
+        -webkit-transition-delay: 50ms;
+        -moz-transition-delay: 50ms;
+        transition-delay: 50ms;
+        -webkit-transform: translateZ(0px);
+        -moz-transform: translateZ(0px);
+        transform: translateZ(0px);
+      }
+      &:nth-child(3) {
+        -webkit-transition-delay: 100ms;
+        -moz-transition-delay: 100ms;
+        transition-delay: 100ms;
+        -webkit-transform: translateZ(0px);
+        -moz-transform: translateZ(0px);
+        transform: translateZ(0px);
+      }
+      &:last-child {
+        -webkit-transition-delay: 150ms;
+        -moz-transition-delay: 150ms;
+        transition-delay: 150ms;
+        -webkit-transform: rotateY(20deg) translateZ(0px);
+        -moz-transform: rotateY(20deg) translateZ(0px);
+        transform: rotateY(20deg) translateZ(0px);
+      }
+    }
+  }
 }
-
 .not-found {
-	text-align: center;
-	
-	h1 {
-		font-weight: lighter;
-		font-size: 6em;
-	}
-	
-	p {
-		font-size: 1em;
-	}
+  text-align: center;
+  h1 {
+    font-weight: lighter;
+    font-size: 6em;
+  }
+  p {
+    font-size: 1em;
+  }
 }
-
 @media screen and (max-width: 63.875em) {
-  .wrapper { 
-    font-size: 60%; 
-    width: 100%; 
+  .wrapper {
+    font-size: 60%;
+    width: 100%;
     padding: 0 20px;
-    
-    h2 { 
-      left: 308px; 
-      padding: 0; 
-      text-align: left; 
+    h2 {
+      left: 308px;
+      padding: 0;
+      text-align: left;
       margin-left: 30px;
     }
   }
-
   .iphone {
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
-    h3 { 
+    h3 {
       display: none;
       width: 50%;
       left: 290px;
     }
   }
 }
-
 @media screen and (max-width: 58em) {
   .ac-grid {
     width: 90%;
     left: 5%;
     margin-left: 0;
     padding-top: 8em;
-    
     a {
       width: 22%;
     }
   }
 }
-
-
 @media screen and (max-width: 35.6875em) {
   .wrapper {
-    padding: 0 20px 100px;
-    
-    h2 { 
+    padding: 0 0 0;
+    h2 {
       width: 100%;
       text-align: center;
       margin: 0 0 1em;
@@ -338,37 +293,31 @@ a {
       position: relative;
     }
   }
-
   .iphone {
-    width: 318px;
-    
+    width: 349px;
     h3 {
       display: none;
       position: relative;
-      margin: -1em ;
+      margin: -1em;
       left: auto;
       width: 100%;
       top: 100px;
-      /* display: block; */
       text-align: center;
     }
   }
-
   .ac-grid a {
     width: 40%;
   }
-
   .wrapper.ac-gridview .ac-grid a {
     -webkit-transform: translateZ(0px) !important;
     -moz-transform: translateZ(0px) !important;
     transform: translateZ(0px) !important;
   }
-  
 }
-
 @media screen and (width: 320px) {
   .iphone {
-    margin: 0 -5em auto;
-    width: 318px;
+    margin: 0 -1em auto;
+    height: 560px;
+    width: 320px;
   }
 }
